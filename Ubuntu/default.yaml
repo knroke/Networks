@@ -1,0 +1,21 @@
+network:
+ version:
+ - 2
+ renderer:
+ - networkd
+ ethernets:
+  ens33:
+   dhcp4:
+   - no
+   dhcp6:
+   - no
+   addresses:
+   - 192.168.0.2/24
+   routes:
+    to:
+    - defualt
+   nameservers:
+    addresses:
+    - 192.168.0.1
+    search:
+    - test.local
